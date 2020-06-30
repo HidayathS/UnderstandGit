@@ -1,1 +1,1 @@
-# Understanding GIT --- #
+# Understanding GIT #

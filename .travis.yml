@@ -1,0 +1,10 @@
+language: generic
+sudo: required
+services:
+  - docker 
+
+before_install:
+  - docker build -t hidayathm/UnderstandingGit -f Dockerfile.dev .
+
+script:
+  - docker run -e CI=true hidayathm/UnderstandingGit npm run test
